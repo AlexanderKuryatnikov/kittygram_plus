@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 from django.db import models
 
 CHOICES = (
@@ -7,6 +8,8 @@ CHOICES = (
         ('Ginger', 'Рыжий'),
         ('Mixed', 'Смешанный'),
     )
+
+User = get_user_model()
 
 
 class Achievement(models.Model):
